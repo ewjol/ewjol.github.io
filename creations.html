@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Créations - EddysmountSite</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Vidéo en arrière-plan -->
+    <video autoplay muted loop id="bg-video">
+        <source src="creations.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas la vidéo.
+    </video>
+
+    <!-- Navigation -->
+    <header class="header">
+        <a href="index.html" class="title3">Accueil</a>
+        <a href="creations.html" class="title2">Créations</a>
+        <a href="contact.html" class="title3">Contact</a>
+    </header>
+
+    <!-- Contenu principal -->
+    <div class="content">
+        <h1>Créations</h1>
+        <p>Voici quelques-uns de mes projets récents.</p>
+
+        <section class="creations-row">
+
+            <!-- Création 1 -->
+            <div class="creation-item">
+                <img src="snt2024-mini.png" alt="SNT 2024" class="creation-image">
+                <div>
+                    <a href="indexsnt.html" class="title">➜ SNT 2024</a>
+                    <p class="creation-description">Ceci est un petit site internet sur lequel on peut retrouver plusieurs éléments clés de la matière SNT au lycée.</p>
+                </div>
+            </div>
+
+            <!-- Création 2 -->
+            <div class="creation-item">
+                <img src="eddysmount.png" alt="EddysmountSite" class="creation-image">
+                <div>
+                    <a href="index.html" class="title">➜ EddysmountSite</a>
+                    <p class="creation-description">Ceci correspond au site que vous visionnez actuellement.</p>
+                </div>
+            </div>
+
+        </section>
+
+	<br />
+
+	<p>blablabla<br /><br />
+        blablabla<br /><br />
+        blablabla<br /><br />
+        blablabla<br /><br />
+        blablabla<br /><br />
+        blablabla<br /><br />
+        blablabla<br /><br />
+        blablabla<br /><br />
+        blablabla<br /><br />
+        blablabla<br /><br />
+        blablabla<br /><br />
+        blablabla<br /><br />
+	blablabla<br /><br />
+        blablabla<br /><br />
+        blablabla<br /><br />
+        blablabla<br /><br />
+        blablabla<br /><br />
+        blablabla<br /><br />
+        blablabla<br /><br />
+        blablabla<br /><br />
+        blablabla<br /><br />
+        blablabla<br /><br />
+        blablabla<br /><br />
+        blablabla<br /><br /></p>
+
+    </div>
+
+    <!-- JS pour le fondu de la vidéo au scroll -->
+    <script>
+        const bgVideo = document.getElementById('bg-video');
+        document.querySelector('.content').addEventListener('scroll', e => {
+            bgVideo.style.opacity = Math.max(0, 1 - e.target.scrollTop / 200);
+        });
+    </script>
+
+</body>
+</html>

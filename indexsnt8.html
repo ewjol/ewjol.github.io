@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>Localisation, cartographie et mobilité</title>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css">
+  	<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css">
+
+	<link rel="stylesheet" href="indexstyle.css">
+
+<style>
+	html, body {
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	#map_8742dfab121ae61dfaada62b2bfa2a04 {
+		position: relative;
+		width: 100%;
+		height: 84vh;
+	}
+	.leaflet-container {
+		font-size: 1rem;
+	}
+</style>
+</head>
+<body>
+	<div class="header"></div>
+	<div class="content">
+	<body style="background-image: url('https://proyectoviajero.com/wp-content/uploads/2024/01/nombre_de_la_tierra.webp'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+
+		<h4><strong><a href="indexsnt.html" style="color: white;">↩ Index SNT 2024</a></strong></h4>
+		<h1><em><strong>Localisation, cartographie et mobilité</strong></em></h1>
+	<div class="folium-map" id="map_8742dfab121ae61dfaada62b2bfa2a04"></div>
+	</div>
+
+		<script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+		<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+
+<script>
+	var map = L.map("map_8742dfab121ae61dfaada62b2bfa2a04").setView([48.858370, 2.294481], 15);
+
+	L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+	}).addTo(map);
+
+	var marker = L.marker([48.858370, 2.294481]).addTo(map);
+	marker.bindPopup('<span style="color: black;">La Tour Eiffel</span>').openPopup();</script>
+</body>
+</html>

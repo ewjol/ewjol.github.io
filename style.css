@@ -1,0 +1,224 @@
+/* =========================
+   Base
+========================= */
+body {
+    margin: 0;
+    background-color: #293237;
+    font-family: Arial, sans-serif;
+    color: white;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+body.fade-out {
+    opacity: 0;
+}
+
+/* =========================
+   Header (menu de navigation)
+========================= */
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #ADD8E6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.header a.title2,
+.header a.title3 {
+    margin: 0 20px;
+    color: #111618CC;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.5s;
+}
+
+.header a.title2 {
+    background-color: #ADBBE6;
+    padding: 35px 15px;
+}
+
+.header a.title2:hover {
+    background-color: #ADE6D8;
+}
+
+.header a.title3 {
+    background-color: #ADD8E6;
+    padding: 26px 15px;
+}
+
+.header a.title3:hover {
+    background-color: #E6D8AD;
+}
+
+/* =========================
+   Background vidéo ou image
+========================= */
+#bg-video,
+.bg-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 1;
+    transition: opacity 0.1s;
+}
+
+/* Pour index.html uniquement */
+.bg-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 500px; /* ou la hauteur que tu veux */
+    background: url("accueil.jpg") no-repeat center top;
+    background-size: cover;
+    z-index: -1;
+    opacity: 1;
+    transition: opacity 0.1s;
+}
+
+
+/* =========================
+   Contenu scrollable
+========================= */
+.content {
+    margin: 90px 100px 0 100px;
+    padding: 40px;
+    background-color: rgba(17, 22, 24, 0.8);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    height: calc(100vh - 80px);
+    overflow-y: scroll;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+/* =========================
+   Titres et textes
+========================= */
+h1, h3, h4 {
+    margin: 10px 0;
+}
+
+h3, h4 {
+    font-size: 16px;
+    color: #ffe59c;
+}
+
+.title {
+    color: #f2ecff;
+    text-decoration: none;
+}
+
+.title:hover {
+    text-decoration: underline;
+}
+
+.creation-description {
+    margin: 0;
+    color: #f2ecff;
+}
+
+/* =========================
+   Créations
+========================= */
+.creations-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.creation-item {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex: 1;
+    min-width: 250px;
+    gap: 15px;
+}
+
+.creation-left,
+.creation-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.creation-left {
+    align-items: center;
+}
+
+.creation-image {
+    width: 120px;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* =========================
+   Liens contact et GitHub
+========================= */
+.ligne-contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lien-mail, .lien-mail2 {
+    padding: 8px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.5s;
+}
+
+.lien-mail {
+    color: white;
+    background-color: #267D67;
+}
+
+.lien-mail:hover {
+    background-color: black;
+    cursor: pointer;
+}
+
+.lien-mail2 {
+    color: #111618CC;
+    background-color: #ADD8E6;
+    border-radius: 20px;
+}
+
+.lien-mail2:hover {
+    background-color: #E6D8AD;
+    cursor: pointer;
+}
+
+/* =========================
+   Images et footer
+========================= */
+.rectangle-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.contact2 {
+    color: #c3b5e0;
+    text-align: right;
+    font-family: Consolas, monospace;
+}
+
+em {
+    display: block;
+    text-align: right;
+    color: #f5f1d5;
+}

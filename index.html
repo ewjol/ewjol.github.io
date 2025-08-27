@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>EddysmountSite</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Arrière-plan -->
+    <div class="bg-image"></div>
+
+    <!-- Navigation -->
+    <header class="header">
+        <a href="index.html" class="title2">Accueil</a>
+        <a href="creations.html" class="title3">Créations</a>
+        <a href="contact.html" class="title3">Contact</a>
+    </header>
+
+    <!-- Contenu principal -->
+    <div class="content">
+        <h1>Accueil</h1>
+        <br />
+
+        <section>
+            <p><a href="indexsnt.html" class="title">➜ SNT 2024</a></p>
+        </section>
+
+        <br />
+        <p>blablabla<br /><br />
+        blablabla<br /><br />
+        blablabla<br /><br />
+        blablabla<br /><br />
+        blablabla<br /><br />
+        blablabla<br /><br />
+        blablabla<br /><br />
+        blablabla<br /><br />
+        blablabla<br /><br />
+        blablabla<br /><br />
+        blablabla<br /><br />
+        blablabla<br /><br />
+blablabla<br /><br />
+        blablabla<br /><br />
+        blablabla<br /><br />
+        blablabla<br /><br />
+        blablabla<br /><br />
+        blablabla<br /><br />
+        blablabla<br /><br />
+        blablabla<br /><br />
+        blablabla<br /><br />
+        blablabla<br /><br />
+        blablabla<br /><br />
+        blablabla<br /><br />
+</p>
+    </div>
+
+    <!-- JS pour l'effet fade au scroll -->
+    <script>
+        const bg = document.querySelector('.bg-image');
+        document.querySelector('.content').addEventListener('scroll', function() {
+            const scrollTop = this.scrollTop;
+            let opacity = 1 - scrollTop / 200;
+            if(opacity < 0) opacity = 0;
+            bg.style.opacity = opacity;
+        });
+    </script>
+
+</body>
+</html>
